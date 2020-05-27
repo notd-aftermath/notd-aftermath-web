@@ -1,0 +1,39 @@
+.home-banner {
+    width: 100%;
+}
+
+.map-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.card-container {
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 448px;
+    height: 505px;
+    margin: auto;
+}
+
+.card-image {
+    width: 448px;
+    height: 300px;
+}
+
+.card a {
+    float: right;
+}
+
+.discord-image-icon {
+    background-image: url('/assets/usmc-icon.png');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+}
