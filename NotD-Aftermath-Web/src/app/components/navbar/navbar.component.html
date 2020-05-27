@@ -5,6 +5,7 @@
     <div class="d-none d-md-block">
         <button mat-button routerLink="/">NotD Aftermath</button>
         <button mat-button routerLink="/changelog">Changelog</button>
+        <button mat-button routerLink="/suggestions">Suggestions</button>
         <a mat-button href="https://github.com/Thraxs/NotD-Aftermath/issues">Report a bug</a>
     </div>
     <button mat-button [mat-menu-trigger-for]="menu" class="d-md-none">
@@ -14,5 +15,6 @@
   <mat-menu x-position="before" #menu="matMenu" class="d-md-none">
       <button mat-menu-item routerLink="/">NotD Aftermath</button>
       <button mat-menu-item routerLink="/changelog">Changelog</button>
+      <button mat-menu-item routerLink="/suggestions">Suggestions</button>
       <a mat-menu-item href="https://github.com/Thraxs/NotD-Aftermath/issues">Report a bug</a>
   </mat-menu>
