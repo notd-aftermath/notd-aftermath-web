@@ -1,0 +1,30 @@
+<h1>Changelog</h1>
+<mat-card>
+    <mat-form-field color="accent">
+        <mat-label>Version</mat-label>
+        <mat-select color="accent" [(ngModel)]="this.selectedRelease" (ngModelChange)="this.onVersionChanged()">
+            <mat-option *ngFor="let release of releaseService.releases$ | async" [value]="release">{{release.version}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <a mat-raised-button color="primary" class="download-button" [disabled]="selectedRelease == null" [attr.href]="selectedRelease?.download">Download version</a>
+    <mat-divider></mat-divider>
+    <div class="version-content">
+        <div *ngIf="selectedRelease != null">
+            <h2>Release Information</h2>
+            <p>
+                <b>Map version: </b>
+                <span>{{selectedRelease.version}}</span>
+            </p>
+            <p>
+                <b>Release date: </b>
+                <span>{{selectedRelease.date}}</span>
+            </p>
+            <p>
+                <b>Game version: </b>
+                <span>{{selectedRelease.gameVersion}}</span>
+            </p>
+        </div>
+
+        <div class="changelog-content" [innerHtml]="logText"></div>
+    </div>
+</mat-card>

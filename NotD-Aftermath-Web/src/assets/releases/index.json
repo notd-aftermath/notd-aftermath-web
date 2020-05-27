@@ -1,0 +1,67 @@
+{
+    "releases": [
+        {
+            "version": "RE 1.1.1",
+            "date": "May 6th, 2020",
+            "gameVersion": "1.32.5.15129",
+            "logFile": "RE_1.1.1.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.1.1/NOTD_Aftermath_RE_1.1.1.w3x"
+        },
+        {
+            "version": "RE 1.1.0",
+            "date": "May 5th, 2020",
+            "gameVersion": "1.32.5.15129",
+            "logFile": "RE_1.1.0.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.1.0/NOTD_Aftermath_RE_1.1.0.w3x"
+        },
+        {
+            "version": "RE 1.0.2",
+            "date": "April 27th, 2020",
+            "gameVersion": "1.32.3.14883",
+            "logFile": "RE_1.0.2.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.0.2/NOTD_Aftermath_RE_1.0.2.w3x"
+        },
+        {
+            "version": "RE 1.0.1",
+            "date": "April 26th, 2020",
+            "gameVersion": "1.32.3.14883",
+            "logFile": "RE_1.0.1.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.0.1/NOTD_Aftermath_RE_1.0.1.w3x"
+        },
+        {
+            "version": "RE 1.0.0",
+            "date": "April 24th, 2020",
+            "gameVersion": "1.32.3.14883",
+            "logFile": "RE_1.0.0.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.0.0/NOTD_Aftermath_RE_1.0.0.w3x"
+        },
+        {
+            "version": "1.6a hotfix 3",
+            "date": "January 20th, 2020",
+            "gameVersion": "1.32.0.14481",
+            "logFile": "1.6ah3.html",
+            "download": "https://github.com/Thraxs/Notda1.6aHotfixes/releases/download/1.6a_h3/NOTD_Aftermath_1.6a_h3.w3x"
+        },
+        {
+            "version": "1.6a hotfix 2",
+            "date": "June 2nd, 2019",
+            "gameVersion": "1.31.0.12071",
+            "logFile": "1.6ah2.html",
+            "download": "https://github.com/Thraxs/Notda1.6aHotfixes/releases/download/1.6a_h2/NOTD_Aftermath_1.6a_h2.w3x"
+        },
+        {
+            "version": "1.6a hotfix 1",
+            "date": "June 1st, 2019",
+            "gameVersion": "1.31.0.12071",
+            "logFile": "1.6ah1.html",
+            "download": "https://github.com/Thraxs/Notda1.6aHotfixes/releases/download/1.6a_h1/NOTD_Aftermath_1.6a_h1.w3x"
+        },
+        {
+            "version": "1.6a",
+            "date": "April 27th, 2018",
+            "gameVersion": "1.29.1.9160",
+            "logFile": "1.6a.html",
+            "download": "https://www.epicwar.com/maps/303729/"
+        }
+    ]
+}

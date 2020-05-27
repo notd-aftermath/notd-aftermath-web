@@ -1,0 +1,52 @@
+<div>
+    <img class="home-banner" src="assets/banner.jpg">
+    <p class="map-description">
+        Night of the Dead Aftermath is a custom zombie survival map for the game Warcraft 3 produced originally by Starlite. It was the most downloaded survival map and was awarded Spotlight Map status by Blizzard in May 2006.
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="card-container col-sm-12 col-xl-6">
+        <mat-card class="card">
+            <mat-card-header>
+                <div mat-card-avatar class="discord-image-icon"></div>
+                <mat-card-title>Discord</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="card-image" src="/assets/discord.jpg">
+            <mat-card-content>
+                <p>
+                    Join the community in our discord server to learn more about the game and play with us.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a mat-raised-button color="primary" href="https://discord.com/invite/UBps3HT">Join NotD Aftermath Discord</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+
+    <div class="card-container col-sm-12 col-xl-6">
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-icon mat-card-avatar>cloud_download</mat-icon>
+                <mat-card-title>Download map</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="card-image" src="/assets/map_picture.jpg">
+            <mat-card-content>
+                <p>
+                    Click below to download the last released version of the map. You can find a list of changes in the changelog section.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a  mat-raised-button color="primary" 
+                    *ngIf="(releaseService.latestRelease$ | async) != null" 
+                    [attr.href]="(releaseService.latestRelease$ | async).download"
+                >
+                    <img class="download-icon" src="assets/map_icon.png">
+                    Download {{this.GetDownloadFileName((releaseService.latestRelease$ | async))}}
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+
+</div>
