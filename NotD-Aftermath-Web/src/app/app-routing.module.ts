@@ -5,7 +5,8 @@ import { ChangelogComponent } from './components/changelog/changelog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'changelog', component: ChangelogComponent }
+  { path: 'changelog', component: ChangelogComponent },
+  { path: '**', redirectTo: '' }
 
 ];
 
