@@ -6,22 +6,25 @@
             <mat-option *ngFor="let release of releaseService.releases$ | async" [value]="release">{{release.version}}</mat-option>
         </mat-select>
     </mat-form-field>
-    <a mat-raised-button color="primary" class="download-button" [disabled]="selectedRelease == null" [attr.href]="selectedRelease?.download">Download version</a>
+    <a mat-raised-button color="primary" class="download-button" 
+        [disabled]="selectedRelease == null || selectedRelease.download.length == 0" 
+        [attr.href]="selectedRelease?.download">Download version
+    </a>
     <mat-divider></mat-divider>
     <div class="version-content">
         <div *ngIf="selectedRelease != null">
             <h2>Release Information</h2>
             <p>
                 <b>Map version: </b>
-                <span>{{selectedRelease.version}}</span>
+                <span>{{selectedRelease.version ? selectedRelease.version : "?"}}</span>
             </p>
             <p>
                 <b>Release date: </b>
-                <span>{{selectedRelease.date}}</span>
+                <span>{{selectedRelease.date ? selectedRelease.date : "?" }}</span>
             </p>
             <p>
                 <b>Game version: </b>
-                <span>{{selectedRelease.gameVersion}}</span>
+                <span>{{selectedRelease.gameVersion ? selectedRelease.gameVersion : "?"}}</span>
             </p>
         </div>
 

@@ -1,0 +1,98 @@
+<h2>Changes</h2>
+
+<h3>Beta 1</h3>
+
+<ul>
+    <li>Fixed the problem with saving in NM as a Col or higher. It should work fine now (needs testing).</li>
+    <li>Introduced a temporary fix for the Shiva bug thanks to Psychomedic. Looking into a more permanent fix, i think i might have it soon.</li>
+    <li>Reduced Fracture's duration from 20 minutes to 10 minutes.</li>
+    <li>Reduced Necrotroph's duration from 20 minutes to 10 minutes.</li>
+    <li>K-9's now have a single inventory slot. Can carry an item but cannot use it.</li>
+    <li>Chain Explosives now come with 3 charges instead of two in order to make them viable over clays.</li>
+    <li>Agents damage type changed to Creature type damage and their feedback reduced from 48 to 36 per hit. </li>
+    <li>Golf Companies Claymores can now be attacked like any ordinary unit (if you detect them that is).</li>
+    <li>Removed Snipers from LC entirely. MM's are still present however.</li>
+    <li>Rifle Grenade skill buffed from 800/1100/1400/1700/2000 to 1300/1550/1800/2050/2300 (forgot to change the tooltip though).</li>
+    <li>Buffed Assaultman's base energy regen. </li>
+    <li>Increased the Assaultman's base intel from 6 to 7.</li>
+    <li>Increased the Flamethrower's movement speed by 5. </li>
+    <li>Increased the Machine Gunner's movement speed by 5. </li>
+    <li>Increased the Flamethrower's range by 50. </li>
+    <li>Increased the Assaultman's range by 25.</li>
+    <li>Removed Heavy Carapace type armor from all parasites and made them standard Carapace.</li>
+    <li>Increased the chances of getting rid of Necro and Venatrum when using an AV item from 33% to 50%. </li>
+    <li>Clear cmd added (-clear) </li>
+    <li>Fixed Rifle Grenade tooltip </li>
+    <li>Fixed version number </li>
+    <li>Slight garg damage reduction</li>
+</ul>
+
+<h3>Beta 3</h3>
+
+<ul>
+    <li>Predator MQ3 removed from the random pool. If you want the pred, you'll need to choose him. </li>
+    <li>AP, MG, SAM-R and M-29 crit changed so that their crits (and only their crits) cannot miss. Not a very big issue for most classes since the overlap with a crit and an evasion procing will be minimal, but was necessary for the two following changes. </li>
+    <li>Combat Engineer Crit ability fixed, it does not miss on attacks if it has the skill learned. Also gave the ability to not miss a tooltip in the CE actions (Wide Dispersion). This ability stacks perfectly fine with Critical Strike and the attack splash (as opposed to what the old ability would of done, had it worked).</li>
+    <li>MBS lvl 1 now grants the passive ability, Precision Aiming. When acquired, the MM will not miss it's targets. Stacks fine with both Critical Strike and the attack splash. </li>
+    <li>Marksman MBS scaling redone, now does not have -MS values at lvl 1 and 2, it increases by +3% MS/AS per lvl. The lvl 5 is still +15%, all that has been changed is the scaling. However, i am considering undoing this change in light of the previous change, i have to test it out still. </li>
+    <li>Rifle Grenade mana cost set to 30 at all levels.</li>
+    <li>More Tooltip fixes.</li>
+</ul>
+
+<h3>Beta 4</h3>
+
+<ul>
+    <li>Tried out what Kyu suggested and removed the Latency check, in case that is the cause of the early fatals for players on pvpng servers.</li>
+    <li>Took away the No-Miss ability for both the MM and the CE due to conflict with their attack splash and Critical Strike.</li>
+    <li>Mini FT Flame Burst ability mana cost decreased from 40 mana to 30 mana. This should allow the minis to do a little bit more than shoot a bit, burst twice then twiddle their thumbs for the next 5 minutes waiting for their mana to come back. </li>
+    <li>Slightly lowered Thanatos' attack buffer range. This means that a unit has to travel a bit less in order to evade his attack. This should help out slower classes to run from thana a bit. </li>
+    <li>Increased Field Light truesight range a bit in order to help identify and react to invis units.</li>
+    <li>Fixed a problem with diablo chance to spawn during Dark Clouds for mid ranked squads</li>
+    <li>Diablo chance set from 1.3% to 2% chance to spawn for low ranked squads. </li>
+    <li>Diablo chance set from 5% chance to 10% chance to spawn for mid (40k average XP) ranked squads.</li>
+    <li>DC chance in Nightmare mode set from to 50% to 33%. </li>
+    <li>DC chance in Normal mode set from 33% to 25%. </li>
+    <li>Changed the way the cocoons pinging works a bit. A cocoon can only not be pinged if the squad XP is over 40k and there are more than 6 players currently alive in the game. The chance to not be pinged is 33% for every coon, when the SR is between 40k and 70k. Over 70k SR gives a 50% chance for each coon to not be pinged. This was done because in small games, not pinging coons was only an encouragement to map hacking or failing the mission, since it was determined that unpinged coons were unlikely to be found, even with an FR, DO and MM scouting the map as fast as possible, so the objectives were unfeasable for such squads.</li>
+    <li>Chance of Lost Cause in Nightmare mode increased from 25% to 33%. </li>
+    <li>Chance of Lost Cause for high ranked squads (+70k SR) further increased. </li>
+    <li>Chance of Containment in Nightmare mode decreased to 13%</li>
+    <li>Chance of Containment for high ranked squads (+70k SR) further decreased.</li>
+    <li>As it stands, in Nightmare, high ranked squads have a 50% chance for Lost Cause and should that check fail, they have an 83% chance for Magnificent Bastards.</li>
+    <li>High ranked squads playing in Normal mode have the same chance for LC, MB and Containment as a medium ranked squad would in Nightmare.</li>
+</ul>
+
+<h3>Beta 5</h3>
+
+<ul>
+    <li>Mini FT Flame Burst mana cost reduced. </li>
+    <li>Rifle Grenade tooltip fixed</li>
+    <li>Rifle Grenade cooldown increased at lower lvls. It was 6/6/6/6/6. Now its 25/20/15/10/5.</li>
+    <li>Sprinting while fractured no longer reduces MS permanently. Instead, it deals 100 damage and slows 50 ms for 2.5s, but sprinting will still work. I figured permanently reducing a stat on a hero was against the theme of NOTD:AM, especially if it was a stat like MS which is central to gameplay. </li>
+    <li>Com tower set to invul after Delta AF.</li>
+    <li>Players made invul after Containment and LC finish. </li>
+    <li>Reduced Infrared Strobe mana cost from 30 to 15.</li>
+    <li>Field aid mana cost halved. This should allow people to actually use it without burning all their mana. </li>
+    <li>Field aid casting time increased by 50% (in other words, it heals slower). This does not affect the mana efficiency of the skill, just at the speed at which the healing is done. This should give people a greater degree of control over how much they heal if they need to.</li>
+    <li>Saline IV mana cost now 35 at all lvls rather than increasing with lvls. </li>
+    <li>Properly fixed golf claymores so they can be shot by the players. They are still invisible however so you do need to have some kind of sight item or skill in order to find them and shoot them.</li>
+    <li>Recalculated the DPS boost on TX1 to be more in line with the boost that AP gives the MM. (AP and U-235 gives 3.5x as much damage to the MM as to other classes, TX1 now gives 3x as much damage to the MM as other classes, up from 2.5x) </li>
+    <li>A few minor bug fixes.
+    <li>Updated credits.
+</ul>
+
+<h3>Beta 7</h3>
+
+<ul>
+    <li>CE mana gets refunded if com array is placed out of bounds.</li>
+    <li>Fixed an balanced numerous issues in lost cause, too lazy to compile a full list for that, too long of a list. </li>
+    <li>Fixed a minor bug regarding Chapter 3 chances. </li>
+    <li>Increased the DO, Bushmaster and MM range by 300. Balance-wise, i don't expect this to be an issue since its very rare for those units to ever fire at maximum range. It was done for LC reasons. </li>
+    <li>Added a -view command to zoom in and out. -view 1 is the standard cam. -view 2 and -view 3 are both more zoomed out versions. Alternatively, you can type in -view # (where '#' is a number between 300 and 1000) to set the camera to a custom distance. I strongly recommend using NVG's if you choose to use the zoom out commands since it does darken the screen a bit when you zoom out. For the same reason, its advised going back to -view 1 during Dark Clouds and NS.</li>
+    <li>Gave the IUL and the Rifleman a slightly different Critical Strike skill. It has a higher chance of procing but a somewhat reduced multiplier. The overall DPS boost is slightly lower (1.525 DPS boost compared to the 1.6 DPS boost from the standard crit when both skills are at lvl 7), this skill is intended to reduce overkill against most units. Their crits will still 1 hit kill most small stuff (in normal games) but be occurring more often. This was done to focus the Rifleman and the IUL more on the anti-swarm aspect. I tested this skill myself, but it's still subject to changes, as 1 game is not enough to fully test the gameplay impacts. In other words, i'd like peoples ideas and feedback after they've tested the skill.</li>
+    <li>Gave the mini Sniper the ability to call in CAS in Chapter 3. This should offset the otherwise useless nature of the Sniper in MB and Containment. With the ability to track bosses at long distance with a long range scope and des, i felt that CAS would make it a more formidable mini if used correctly. In close range, it'd be fairly useless since you can't really call a CAS in town when the boss is in close range (well you can, but it'd kill a lot of people and minis), but at long it'd shine with the ability to potentially neutralize an FC or a boss if aimed correctly. The cooldown on the sniper CAS is 150s. </li>
+    <li>Added in a new loading screen. Credit goes to Aetherbeast for making the loading screen. Unfortunately, the format WC3 uses for loading screens reduces the quality, resolution and actually increased the size of the original file, so the image lost a lot of quality. I'm looking into ways to increase the quality without increasing the size of the map considerably. Alternatively, if people feel strongly enough about the loading screen, i could put it in high quality, however, it would bump up the size by about half a MB i suspect.</li>
+    <li>Rifleman has his knife back, he still has a colt though.</li>
+    <li>IUL's FM cooldown has been increased from 5s to 10s. </li>
+    <li>Hero XP range (the range at which a hero can get XP from kills) bumped up from 3000 to 3500.</li>
+    <li>There's a bunch of stuff i'm sure i'm forgetting, i'll edit them in later as i go (i should probably write them down as i'm implementing rather than a day after i upload it).</li>
+</ul>

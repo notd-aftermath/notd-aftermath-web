@@ -61,7 +61,21 @@
             "date": "April 27th, 2018",
             "gameVersion": "1.29.1.9160",
             "logFile": "1.6a.html",
-            "download": "https://www.epicwar.com/maps/303729/"
+            "download": ""
+        },
+        {
+            "version": "1.6",
+            "date": "",
+            "gameVersion": "",
+            "logFile": "1.6.html",
+            "download": ""
+        },
+        {
+            "version": "1.5d",
+            "date": "",
+            "gameVersion": "",
+            "logFile": "1.5d.html",
+            "download": ""
         }
     ]
 }

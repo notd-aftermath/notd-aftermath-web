@@ -6,6 +6,6 @@ Website for NOTD: Aftermath
 ```
 ng build --prod --output-path docs --base-href ./
 ```
-2. Copy the content from NotD-Aftermath-Web into the docs folder at the repository root
+2. Copy the content from NotD-Aftermath-Web/docs into the docs folder at the repository root
 3. Make a copy of docs/index.html and name it docs/404.html
 4. Commit your changes and push.

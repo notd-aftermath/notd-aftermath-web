@@ -1,0 +1,46 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>Path 1.29 Compatibility</li>
+    <li>Features and Improvements</li>
+    <li>Bug Fixes</li>
+</ul>
+
+<hr/>
+
+<h2>Changes</h2>
+
+<h3>Patch 1.29 Compatibility</h3>
+
+<ul>
+    <li>Removed multiple instances of the "return bug" in favor of a different typecasting method.</li>
+    <li>Replaced the human borders of the UI with the night elf ones for the extended widrescreen UI components.</li>
+    <li>Replaced all instances of Player(13) and Player(14) with bj_PLAYER_NEUTRAL_VICTIM and bj_PLAYER_NEUTRAL_EXTRA respectively. ConvertPlayerColor and bj_FORCE_PLAYER instances were updated as well.</li>
+    <li>Changed Residence 41 from Red to Brown.</li>
+</ul>
+
+<h3>New Features and Improvements</h3>
+
+<ul>
+    <li>Save codes are now stored in your Documents\NOTD Aftermath\ folder.</li>
+    <li>Added "-autoload" command which will load your last save automatically without typing in your code.</li>
+    <li>Reverted the loading screen to the one in 1.5c.</li>
+    <li>Textures are now compatable with Mac.</li>
+    <li>Improved the compression of many textures making them look better while having a small filesize.</li>
+    <li>EM Sphere no longer releases if Residence 41 is dead.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>You no longer have to type -view after completing a mission to reset your camera.</li>
+    <li>Improved the detection of when a unit is alive or not. It should be 100% accurate now. This has the potential to fix some random, rare bugs. Currently only applied to Chapter 1.</li>
+    <li>The "-clear" command no longer clears messages for all players (Spinaker).</li>
+    <li>Fixed a fatal error that would happen within the first few minutes of the game due to handle stack corruption. This may also fix more random crashes.</li>
+    <li>Fixed a bug in Revelations where you could get stuck in Chapter 2 if you didn't kill the bosses in the correct order (Spinaker).</li>
+    <li>Fixed a fatal error that could occur if Residence 41 died before the EM Sphere releases.</li>
+    <li>You can no longer play as the Marine Corp or the Civilians by using a hostbot.</li>
+    <li>Fire Mission base damage updated from 300 to 400 (Spinaker).</li>
+    <li>Fixed a bug where you could get stuck floating in the air while using Jump.</li>
+    <li>Detonating a MD5 Mine on a unit with Napalm no longer crashes the game.</li>
+</ul>
