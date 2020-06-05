@@ -1,0 +1,62 @@
+<h1>Code Viewer</h1>
+<mat-card>
+
+    <form class="input-form">
+        <mat-form-field class="input-element" color="accent">
+            <input [(ngModel)]="name" name="name" matInput placeholder="Player name" value="">
+            <mat-hint>Warcraft 3 in-game name</mat-hint>
+        </mat-form-field>
+  
+        <mat-form-field class="input-element" color="accent">
+            <input [(ngModel)]="code" name="code" matInput placeholder="Save code" value="">
+            <mat-hint>NotD Aftermath code</mat-hint>
+        </mat-form-field>
+  
+        <button (click)="validateCode()" mat-raised-button color="primary">Load</button>
+    </form>
+
+    <span *ngIf="loaded && !validCode" class="code-error">Invalid biometric id</span>
+
+
+
+    <div *ngIf="loaded && validCode">
+        <mat-divider></mat-divider>
+        <div class="code-data">
+            <div class="info-element">
+                <span class="info-label" color="accent">Name: </span><span>{{playerData.getRankShort()}} {{playerData.name}}</span>
+            </div>
+            <div class="info-element">
+                <span class="info-label">Experience: </span><span>{{playerData.experience}}</span>
+            </div>
+            <div class="info-element">
+                <span class="info-label">Rank: </span><span>{{playerData.getRankLong()}}</span>
+            </div>
+            <div class="info-element">
+                <span class="info-label">Specialization: </span><span>{{playerData.getMosLong()}}</span>
+            </div>
+            <div class="info-element">
+                <span class="info-label">Combat Readiness: </span><span>{{playerData.getReadiness()}}</span>
+            </div> 
+            <div class="info-element">
+                <span class="info-label">Medals: </span><span>{{playerData.getMedalCountString()}}</span>
+                <mat-list>
+                  <mat-list-item *ngFor="let medal of playerData.medals">
+                      <div class="{{(medal.granted || medal.points >= 6) ? 'medal-enabled' : 'medal-disabled'}}">
+                          <span>{{medal.displayName}}</span>
+                          <span *ngIf="medal.points < 6" > {{"("}}{{medal.points}} / 6{{")"}}</span>
+                          <mat-chip-list class="new-medal-notification" *ngIf="medal.points == 6">
+                              <mat-chip color="accent" selected>New medal!</mat-chip>
+                          </mat-chip-list>
+                      </div>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+    </div>
+
+</mat-card>
+
+
+
+
+

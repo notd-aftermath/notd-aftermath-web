@@ -1,0 +1,47 @@
+.input-form {
+    margin-bottom: 10px;
+}
+
+.input-element {
+    margin-right: 25px;
+}
+
+.code-error {
+    color: red;
+    display: block;
+    margin-top: 20px;
+}
+
+.code-data {
+    padding-top: 20px;
+}
+
+.info-element {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.info-label {
+    color: #69f0ae;
+    font-weight: bold;
+}
+
+.medal-enabled {
+    color: #36bd36;
+}
+
+.medal-disabled {
+    color: #b3b1b1;
+}
+
+.new-medal-notification {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.new-medal-notification mat-chip {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
