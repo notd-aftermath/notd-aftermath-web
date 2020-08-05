@@ -1,0 +1,157 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>Gameplay Changes</li>
+	<li>ALICE Changes</li>
+	<li>Visual Changes</li>
+	<li>Bug Fixes</li>
+	<li>Other</li>
+</ul>
+
+<p>This is the first official release since 1.6a, keep in mind that you may have seen most of the changes in previous experimental or beta versions.</p>
+
+<hr/>
+
+<h2>Changes</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>Added Hell difficulty.</li>
+    <li>Immortals killed with TX-1 ammunition now have a lower chance of resurrection.</li>
+	<li>Increased the number of LZ names on Magnificent Bastards to 12.</li>
+	<li>You can now save when you get more than 3000 experience in a game. The limit is still in place, so only 3000 will be saved if you go above it.</li>
+	<li>Pilot is now available as a reinforcement on Chapter 1.</li>
+	<li>Updated DAO item description to reflect damage increase.</li>
+	<li>Reduced Monofilament Cartridge stun duration from 2s to 1.5s for Marksman minis.</li>
+	<li>Added Field Marshal rank at 1M exp. +1 damage, +0.02 attack speed, +0.03 energy regeneration, +2 move speed, -7HP, +15 sight range. Can order hold position to all ranks. Double chance of pilot reinforcement. Extra skill point on spawn.</li>
+	<li>Unknown entities spawned from Prometheus corpse are now timed life. Parasites are still the same.</li>
+	<li>Added new watchtower in the SW entrance of the airfield. Slightly adjusted pathing for all towers.</li>
+	<li>Added FN Mk17 (SCAR-H) battle rifle for Rifleman/Infantry Unit Leader.</li>
+	<li>You can no longer get a fracture while jumping (to prevent instant death)</li>
+	<li>Extra 50 XP to all Marines when all 16 civilians make it through the Convoy Mission. 75 XP on Nightmare. 100xp on Hell.</li>
+	<li>Field combat rank experience is now shared map wide.</li>
+	<li>C-130 item drops now deal damage the moment they touch the ground, not before.</li>
+	<li>Chain explosives can now be stacked up to 9 without Ordnance Handling to match default stack size of 3.</li>
+	<li>The current saving algorithm doesn't allow encoding experience values above 1M, so saving is now limited automatically to 1M. This should fix bugged codes when you have more experience than this.</li>
+	<li>Civilians will now drop inventory items when boarding USS Independence.</li>
+	<li>Marine Pilots can no longer pick up heavy weapons and special ammunition.</li>
+	<li>Removed inventory from USS Independence.</li>
+	<li>The cobras chasing the Flesh Composite during Chapter 1 no longer have hellfire missiles.</li>
+	<li>Chain explosives now deal extra damage if detonated by claymores.</li>
+	<li>Reloading manually is now slightly faster than reloading automatically.</li>
+	<li>Added buff icon for immortal resurrection damage immunity.</li>
+	<li>Immortals can now be killed by claymores and chain explosives.</li>
+	<li>Added message when reloading pistol.</li>
+	<li>Diablo can no longer spawn when there are less than 4 players alive.</li>
+	<li>Decreased Parasite mounds base damage from 35 to 15. But they will now inflict disease on every hit and will never inflict any other ailment.</li>
+	<li>Changed the mechanic for securing Ravenholm during Lost Cause. The mission is now placing and protecting an infrared strobe for 30 seconds.</li>
+	<li>[MQ3 Predator]: New ability "FLIR sector scan". Unlocked by Hellfire Upgrade. Performs a thermal scan of Zulus on the sector.</li>
+	<li>[Designated Marksman]: Reduced stun duration of Monofilament Cartridge to half and added slow effect.</li>
+	<li>[Assaultman]: Updated text and icon for MD5 stun effect. It was previously the default impale effect.</li>
+	<li>[Assaultman]: Increased starting energy from 100 to 150.</li>
+	<li>[Assaultman]: Added SMAW AoE reticle.</li>
+	<li>[Assaultman]: Added FGM-148 Javelin missile launcher item.</li>
+	<li>[Forward Observer]: Added ALICE notification when Perimeter Intelligence is activated.</li>
+	<li>[Forward Observer]: Remove Transceiver ability.</li>
+	<li>[Forward Observer]: Added damage dealt information to Orbital Artillery tooltip.</li>
+	<li>[Forward Observer]: White phosphorus now reduces the armor of the units hit by the initial explosions for a few seconds.</li>
+	<li>[Combat Engineer]: Reduced number of levels of Critical Strike from 7 to 5, increased the damage of each level. Now insert shells is granted at level 2 instead of level 3.</li>
+	<li>[Infantry Unit Leader]: Switched hotkey for defensive stance to "S".</li>
+	<li>[Combat Engineer]: Updated projectile speed from 2250 to 2500.</li>
+	<li>[Delta Operator]: The CM bonus armor aura dummy is now invisible and unclickable.</li>
+</ul>
+
+<h3>ALICE Changes</h3>
+
+<ul>
+    <li>Updated ALICE Operations Manual to include view '3' and '4'.</li>
+	<li>Team colors are now disabled by default on survival (no need to type -tc -1 anymore). No change for deathmatch.</li>
+	<li>ACA is now disabled by default. An ALICE message will be shown alerting that ACA is available for privates if they want to enable it.</li>
+	<li>The "-team" command now displays the classes for KIA marines.</li>
+	<li>ALICE will now display a message to all players when the M242 is disassembled.</li>
+	<li>The "-report" command now displays the squad experience factor. This value is a percentage where 100% is the initial factor for normal difficulty with 0 squad rating. It can increase or decrease depending on many factors throughout the game. The higher it is, the more rank experience the squad will earn.</li>
+	<li>Increased degree of randomness based on user input for the "-random" command.</li>
+	<li>Added new "-ar x" command to set the acquisition range of your hero between 50 and the max attack range.</li>
+	<li>Added new "-uar x" command to set the acquisition range of your selected unit between 50 and the max attack range.</li>
+	<li>Added new "-norf" command to opt out of reinforcements for players with rank of MajGen and above.</li>
+	<li>Shell adjustment messages are now only shown to the player doing them.</li>
+	<li>Added context tagging system for communicating locations to allies.</li>
+	<li>Added new "-kick x" command to kick a player (red player only).</li>
+</ul>
+
+<h3>Visual changes</h3>
+
+<ul>
+    <li>Added new loading screen with 2k resolution.</li>
+	<li>Added new icon, updated name and description for Lost Cause enhanced energy regeneration buff.</li>
+	<li>Added new custom icon for the detonation cord item.</li>
+	<li>Changed monofilament debuff icon to make it different from the flare debuff</li>
+	<li>Remove extra line break in CE net skill description.</li>
+	<li>Removed leaves from terrain without trees around Residence 41</li>
+	<li>Change position of barrels in SAF.</li>
+	<li>Added unit name for extinguished Ground Illumination Flare dummy.</li>
+	<li>Increased the size and changed color of type A parasites (aka super sites).</li>
+	<li>Added new icons for all classes.</li>
+	<li>Updated texture for all FelHound based units.</li>
+	<li>Updated texture for all Ghoul based units.</li>
+	<li>Updated texture for all Gargoyle based units.</li>
+	<li>Updated texture for Eris.</li>
+	<li>Updated EM Sphere release animation.</li>
+	<li>The Good Sheep is now a unit instead of a hero and it no longer gives perimeter intel to the green player. This also means the CE communications array no longer gives free truesight to all players.</li>
+	<li>The spawn helicopter now shows classes locked by rank as disabled.</li>
+	<li>Updated item models to show selection circles.</li>
+	<li>Added new model for the Communications Tower in the airfield.</li>
+	<li>Updated helicopter model with proper collision. This should make it harder to accidentally click the helicopters at the airfield.</li>
+	<li>Updated model for Wraiths.</li>
+	<li>Replaced zulu damage absorb ability on human vehicles with reinforced steel frame.</li>
+	<li>Updated visual and sound effect of transceiver.</li>
+	<li>Added new Power Generator building and moved the coil animation on top of it.</li>
+	<li>Updated nuclear explosion model.</li>
+	<li>Added new model and sounds for SMAW.</li>
+	<li>Added aura to Mundus to make it easier to distinguish him from other units.</li>
+	<li>Update missile model of smoke grenades.</li>
+	<li>Added new model for airfield hangars.</li>
+	<li>Added visual effect for the Leviathan fire attack on the ground.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>Fixed intro music not playing.</li>
+	<li>The enhanced energy regeneration ability granted during Lost Cause was taking up an ability slot. It will now be always hidden.</li>
+	<li>You will no longer lose extra energy cells if you have more than required when entering power generator during Nightstalkers.</li>
+	<li>Lieutenant Oliver can no longer trigger fire missions after he dies during Lost Cause.</li>
+	<li>Marines that spawn on the Containment helicopter are now controled by the AI instead of the dark green player.</li>
+	<li>Fixed immortal AI to make them attack the unit that killed them immediately on resurrection.</li>
+	<li>Updated Lost Cause golf helicopter spawn message from Iron Hand. It no longer says "Patching in its last known coordinates".</li>
+	<li>Orbital Artillery shock is no longer permanent.</li>
+	<li>Refactored weather effect caching. This should fix effects like BHD wind not disappearing after a while like they are supposed to.</li>
+	<li>The "Attack Formation" sound will no longer play for the Lyganesh F-22s after it has been called off.</li>
+	<li>Fixed color used in text commands for dark green player to be dark green instead of light blue.</li>
+	<li>Fixed positioning of Containment helicopter minis.</li>
+	<li>Added small wait between evacuating kilos and evacuating civs to avoid missed bodies.</li>
+	<li>The Lyganesh CAS mission on Revelation will no longer hit the east side of Ravenholm.</li>
+	<li>The survivors of Black Hawk Down can no longer be rescued from town.</li>
+	<li>Failing to rescue the Black Hawk Down will no longer result in extra spawns for Chapter 1.</li>
+	<li>Fixed stats for Drill Instructor Ribbon not being applied.</li>
+	<li>Reduced energy cell discharge bonus from 200 to 150 to match the tooltip.</li>
+	<li>Added failsafe to prevent giving moirae speed boost to other bosses.</li>
+	<li>Hades and Diablo will no longer snatch players with dead or unselected heroes.</li>
+	<li>Fixed incorrect hotkey text for Satellite Imaging ability (General) on communications module.</li>
+	<li>Fixed shotgun sound missing on intro C.</li>
+	<li>Using NVG or Sat Scan on the comms module no longer disables FPS mode.</li>
+	<li>Added failsafe to prevent the chapter 1 helicopters pursuing the Flesh Composite from spawning later in the game.</li>
+	<li>[Machine Gunner]: Ammunition link can no longer be used while jumping.</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+	<li>Removed th-ghost W3HMC library and all hostbot related functionality</li>
+	<li>Removed functionality for loading codes from version 1.4b and earlier</li>
+	<li>Internal reorganization of core engine tools.</li>
+	<li>Ailment chance calculations now use real numbers instead of integers. This should fix FT fortitudine ailment reduction.</li>
+	<li>Small text changes to Quest Menu</li>
+	<li>Small fixes and improvements to code</li>
+</ul>
