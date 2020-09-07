@@ -1,0 +1,134 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>More maneuvering and group movement, less static positions</li>
+	<li>Greater depth</li>
+	<li>Transition from a largely GUI code to JASS.</li>
+</ul>
+
+<h2>Changes</h2>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+	<li>Fixed a bug where Battalion UAV does not register any hits taken.</li>
+	<li>Fixed a bug where Battalion UAV's Laser Designator does not produce a messege and ping.</li>
+	<li>Fixed some occasional convoy pathing issues.</li>
+	<li>Doesn't display "Black Hawk Crew have died due to excessive blood loss." text if all marines are dead when time limit ends for Black Hawk wave.</li>
+	<li>Fixed some AI problems with the first Unknown Entity Computer.</li>
+	<li>Fixed a rare crash that occured with the Black Hawk survivor rescue sequence. (Caserbob)</li>
+	<li>Fixed a serious ammunition bug. (Mr. Freeze & USMC Delta)</li>
+	<li>Heavy Support attack type correctly changed to Machine Gun instead of Rifle.</li>
+	<li>Delta Force, Force Recon and ALO selection tooltip typos and inaccuracies corrected.</li>
+	<li>Fixed a bug in vital signs where it displayed that marines were badly injured when a player has not selected a marine yet.</li>
+	<li>Marine spawns on water now produce a splash effect instead of dust. (Concrete)</li>
+	<li>Fixed a TOT Mission loophole.</li>
+	<li>Mend now has a mana cost of 25.</li>
+	<li>Fixed random crashes caused by a unit cleanup trigger.</li>
+	<li>Fixed a bug with Ammo Modifiers causing items to occasionally lose their damage bonuses.</li>
+	<li>Added active borders to Claymore, Chain Explosive, Medkit, Fibrin Bandage, Ammo Box and Magazine icons. (Infrane)</li>
+	<li>Fixed a bug where Delta Force remain idle if the Marines kill Lyganesh before they detonate the CEs.</li>
+	<li>Deltas will not blow the CEs if Lyganesh has very little HP left.</li>
+	<li>Navy Transport resupply now gives HS +2 mags instead of +3. (Pipedream)</li>
+</ul>
+
+<h3>New Features and Improvements</h3>
+
+<ul>
+	<li>Added Night Vision Goggles for all classes.</li>
+	<li>Darkened the map slightly, giving a greater night time feel, and reducing your general visibility.</li>
+	<li>Experience gain from cannibalized increased slightly.</li>
+	<li>Dead Battalion UAV player now gets a pet. (lost-azn-boy)</li>
+	<li>Modified Wave 5 - Convoy.</li>
+	<li>Reloading sounds are now 3D, and slightly tweaked.</li>
+	<li>Self-Repair ability added to Battalion UAV.</li>
+	<li>Reduced the number of medical items in town. C-130 airdrops are now more widely spaced out.</li>
+	<li>Time required to enter camoflouge increased.</li>
+	<li>Small Force Recon movespeed increase.</li>
+	<li>Reduced Claymore activation time from 10 to 5 seconds.</li>
+	<li>Battalion UAV hit points decreased.</li>
+	<li>Reconnaisance and Covert Operations now require Hero level 3 instead of 2.</li>
+	<li>Cut down the number of function calls whenever possible. Reduced script length by almost 10%.</li>
+	<li>Reduced the amount of first-cast lag.</li>
+	<li>Experience awarded for successfully completing training mode increased from 75 to 250.</li>
+	<li>Added a very basic Corpsman AI.</li>
+	<li>Players are now granted vision of Marine Forces during Chapter 3.</li>
+	<li>Increased Blood Transfusion's mana cost. Hit Points gained increased.</li>
+	<li>Added Engineering Skills sub-menu for Combat Engineer.</li>
+	<li>Terrain size increased by 32x32 tiles. Added an airport section in North East of the map.</li>
+	<li>Marine projectiles now deal less damage against Kevlar Armor. (Notnewguy)</li>
+	<li>Time for Surveillance Sentries wave increased by 1 minute, due to the increase in map size.</li>
+	<li>Marksman's Critical Strike is now placed in the Actions menu. Desert Eagle brought forward.</li>
+	<li>Medal requirements are now slightly less stringent.</li>
+	<li>Improved monofilament cartridge's tooltip.</li>
+	<li>Slight tweak in Muzzle Brake Suppressor mechanics, so that the Marksman doesn't seem to disappear momentarily with each shot.</li>
+	<li>Small change in intro music theme.</li>
+	<li>Combat Knife added to Grunt, Delta Force, Marksman and Force Recon.</li>
+	<li>Air support now provides converage across the entire map during Wave 4.</li>
+	<li>ALO base mana increased.</li>
+	<li>ALO attack weapon changed from M4A1 to submachine gun (800 attack range).</li>
+	<li>RPG cooldown decreased from 80 seconds to 60 seconds.</li>
+	<li>Energy Cell mana regeneration bonus increased from 35% to 50%.</li>
+	<li>RPG casting range increased from 1800 to 3500.</li>
+	<li>Moirae tracker ping interval increased from 5 seconds to 10 seconds.</li>
+	<li>Updated Marine chatter to reflect more on actual gameplay events.</li>
+	<li>GPS Satellite ability added to Communications Array. This is a compromise due to the failure to repair vision problems in the Comm. Array. (Amoyensis)</li>
+	<li>New pet abilities and traits added.</li>
+	<li>Pet Size now drops on death.</li>
+	<li>Pet HP now increases by 35 for every 10 pet levels.</li>
+	<li>Pet speed increases marginally with each level.</li>
+	<li>At level 60, pets gain Sharp Teeth ability and lose permanent invisibility.</li>
+	<li>Pet growth rate reduced to 2%.</li>
+	<li>RPG and SMAW firing time reduced.</li>
+	<li>Navy Transport now provides continuous fire support.</li>
+	<li>Chaingun can now be disassembled. (Demon12)</li>
+	<li>Grunts now start with a Smoke Grenade and Corpsman with a Medkit.</li>
+	<li>New items : Detonation Cord, Smoke Grenade, Pancor Jackhammer, Nano Body Armor.</li>
+	<li>Base Marine movespeed increased. Magazines held by Marines now slow your movespeed by 1.4 per magazine.</li>
+	<li>Items now have a stack limit : Ammo Box (8), Shotguns (24), Grenade Launchers (10), Chain Explosives (12), Claymores (9)</li>
+	<li>Reduced the charges in CEs and Claymores, increased damage.</li>
+	<li>First airdrop begins only at the middle of Wave 1.</li>
+	<li>Firebat now has fuel capacity of 2500 fuel units.</li>
+	<li>Fibrin Bandage stack limit increased to 3, AV stack limit increased to 5.</li>
+	<li>'-ms' command now displays every player's movespeed.</li>
+	<li>M242 Rounds per magazine increased from 25 to 35.</li>
+	<li>Flare Gun item added to ALO and Engineer.</li>
+	<li>Greater clarity in mission objectives.</li>
+	<li>Addressed static strategies (prolonged camping)</li>
+	<li>Parasite Spore range reduced from 1000 to 400. Movement speed increased slightly.</li>
+	<li>Reduced Cauterize's cooldown from 20 to 15 seconds. Increased mana cost by 5.</li>
+	<li>All classes can now use M203. Reasoning : There is a pistol-grip variant.</li>
+	<li>Creeps are slightly easier to kill during the first 4 waves.</li>
+	<li>Surveillance Sentries no longer need to be activated after placement.</li>
+	<li>Shiva drop will periodically ping on Wave & - Moirae. (lil_nicky888)</li>
+	<li>Hero Level 3 now required to learn Napalm. Friendly fire from Napalm removed.</li>
+	<li>Movement speed reduction from carrying M242 Components reduced from 45 to 40.</li>
+	<li>Scaled down Lyganesh slightly.</li>
+	<li>Delta Operators don't wander around to their deaths anymore. (crosses fingers)</li>
+	<li>Dead Players now get mini-marines on Wave 5, Wave 10 and Wave 15. The mini-marines can be accumulated.</li>
+	<li>Wave 16 LZ missions now give all players Marines, not just those alive.</li>
+	<li>Delta Forces' main objective is now to assist you in the retrieval of the M242 Chaingun.</li>
+	<li>You can now save your codes a maximum of 2 times.</li>
+	<li>Players now just need to move next to the M242 Chaingun to operate it.</li>
+	<li>Hits Taken calculation and ailments now more accurate. (Replaced unit is attacked event with unit is damaged)</li>
+	<li>Battalion UAV's airstrike is now more immediate.</li>
+	<li>Battalion UAV now takes 3 seconds to pick and drop items. This cannot be cancelled once the action is performed.</li>
+	<li>Battalion UAV now has 4 inventory slots. Battalion UAV loses 40ms with each item acquired.</li>
+	<li>Suppresive fire has a fixed duration of 10 seconds for all levels. HS remains stationary during this time.</li>
+	<li>Five difficulty modes now available : I Can Win, Bring 'Em On, Hurt Me Plenty, Hardcore, Nightmare.</li>
+	<li>Each civilian that is brought successfully to the Navy Transport now reduces difficulty marginally.</li>
+	<li>Civilians are now extracted through house to house searches in Wave 7.</li>
+	<li>CAS (Close Air Support) Mission implemented for Wave 17. This will be further developed in the next patch.</li>
+	<li>Implemented rudimentary FieldChat system.</li>
+	<li>Fire Artillery ability now renamed to the more accurate ‘Fire Mission’. Learn and usage hotkeys are now aligned to F.</li>
+	<li>Battalion UAV Airstrike ability now available only from Wave 15 onwards. Cooldown reduced from 270 seconds to 60 seconds.</li>
+	<li>Increased Recon UAV visual range from 325 to 375.</li>
+	<li>Scratch Behind Ears hotkey changed to B. Earlier conflict with Cannibalize hotkey. (yukie darling)</li>
+	<li>Cocoons Mission introduced in Revelation Chapter.</li>
+	<li>You cannot earn medals in I Can Win and Bring 'Em On difficulties.</li>
+	<li>The Pilot's death in Wave 4 : BHD now has some adverse consequences.</li>
+	<li>Killing other Marines now result in an Article 15.</li>
+	<li>UAV can now repair all Mechanical units. (mef-cori)</li>
+	<li>Combat Knife moved to the main action menu, (USMC-Delta)</li>
+	<li>You can now view your pet's movespeed with -ms. (USMC-Delta)</li>
+</ul>
