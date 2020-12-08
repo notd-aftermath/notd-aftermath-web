@@ -1,6 +1,13 @@
 {
     "releases": [
         {
+            "version": "1.7.4",
+            "date": "December 8th, 2020",
+            "gameVersion": "1.32.9.16207",
+            "logFile": "1.7.4.html",
+            "download": "https://github.com/Thraxs/NotD-Aftermath/releases/download/1.7.4/NOTD_Aftermath_1.7.4.w3x"
+        },
+        {
             "version": "1.7.3",
             "date": "December 7th, 2020",
             "gameVersion": "1.32.9.16207",
