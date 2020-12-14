@@ -8,7 +8,7 @@ import { ValidationRequestEntry } from '../DTOs/validationRequestEntry';
 @Injectable({ providedIn: 'root' })
 export class CodeService {
 
-    private codeServiceUrl = 'https://notda-decoder.azurewebsites.net/api';
+    private codeServiceUrl = 'https://us-east1-notda-code-decoder.cloudfunctions.net';
 
     constructor(
         private http: HttpClient
