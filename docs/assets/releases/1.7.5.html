@@ -1,0 +1,115 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>Gameplay Changes</li>
+    <li>ALICE Changes</li>
+    <li>Visual changes</li>
+    <li>Bug Fixes</li>
+    <li>Internal changes</li>
+</ul>
+
+<p>This version contains a few gameplay changes, some quality of life improvements and the usual bugfixes.</p>
+
+<hr/>
+
+<h2>Changes</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>Reforged graphics mode is now disabled. The map will always load in classic graphics regardless of player options.</li>
+    <li>Updated items system to allow having disabled items in the inventory (e.g. Blastocyst on MQ-3 Predator or Arclite M23 Hecate on classes other than Flamethrower)</li>
+    <li>Civilians can no longer use primary weapons (but they can still carry them). They can still use light weapons (M320, Benelli RMS-8 and Browning RMS-12A)</li>
+    <li>Civilians can no longer pickup heavy explosives (SMAW, XML-9C Shiva and FGM-148 Javelin Missile)</li>
+    <li>The FGM-148 Javelin Missile can no longer be carried at the same time as other heavy weapons.</li>
+    <li>Enabled native WC3 item stacking introduced in Reforged. This only applies to items that stack with themselves, so for example M320 + HEDP is excluded.</li>
+    <li>Updated containment titan nuke ping timers to 120/60/30 seconds based on difficulty.</li>
+    <li>Reduced number of titan nuke drops from 5 to 4 on hell difficulty.</li>
+    <li>Osiris can no longer spawn during USS Independence escort mission.</li>
+    <li>Etaphreven can no longer spawn in Magnificent Bastards.</li>
+    <li>Players are now invulnerable during chapter transition.</li>
+    <li>The number of EM Sphere release codes required is now reduced when a player leaves the game.</li>
+    <li>If all players die while EM Sphere is charging, or the player with the last required activation code dies/leaves, the EM Sphere will now be activated.</li>
+    <li>All spawns from caves and waterfalls are now random (with the exception of the 1st wave at the start of the game and the spawns for the USS Independence event)</li>
+    <li>Enemies will no longer spawn from closed caves (total amount is not reduced, they just spawn elsewhere)</li>
+    <li>Golf marines no longer spawn in caves or waterfalls in Lost Cause.</li>
+    <li>Havok can now see invisible units in hell difficulty.</li>
+    <li>Slightly reduced the damage of danger zones from FM and Satchels.</li>
+    <li>Multiple players can now use laser designator on the same target and they will all have vision of it.</li>
+    <li>Enabled safe location system for all random enemy spawns to prevent them from happening within player range.</li>
+    <li>Forward stations are no longer owned by players in Deathmatch mode.</li>
+    <li>Players can no longer spawn inside the tunnel.</li>
+    <li>The sheep pen fences are now destructible.</li>
+    <li>The EM Sphere release codes are now randomly generated with the pattern [A-Z1-9]{4} instead of chosen from a random predefined set.</li>
+    <li>Parasite infections are now properly counted as ailments.</li>
+    <li>The timeout to switch to Revelation if Lyganesh is not attacked in Delta is now based on the distance it spawns from players.</li>
+    <li>Removed time-based seed used for the -random command.</li>
+    <li>Killing Prometheus after Residence 41 has been destroyed no longer gives XP.</li>
+    <li>[Forward Observer]: Reduced cost of White Phosphorus and Illumination Rounds from 5 shells to 3 shells.</li>
+    <li>[Forward Observer]: Removed Ordnance Handling ability.</li>
+    <li>[Combat Engineer]: Failing to place the Communications Array due to location will now reset the ability cooldown.</li>
+    <li>[Assaultman]: Increased energy cost of claymores from 25 to 35.</li>
+    <li>[Assaultman]: Added Ordnance Handling ability.</li>
+    <li>[MQ-3 Predator]: Added searchlight ability.</li>
+</ul>
+
+<h3>ALICE Changes</h3>
+
+<ul>
+    <li>Added discord link on all end game messages and quest menu (website link is still there, we now have both).</li>
+    <li>Each player can now have a different sitrep mode.</li>
+    <li>Removed command to set mission objective using sitrep.</li>
+    <li>Context tagging now specifies the medical condition of the target (e.g. "I have open wounds" instead of "I need medical assistance").</li>
+    <li>Context tagging now allows targetting allied explosives.</li>
+    <li>Added total ailments to -ac.</li>
+    <li>Added necrotroph to -ac.</li>
+    <li>Removed -aca message at the start of the game. The functionality is still available but won't be advertised to avoid confusing new players.</li>
+    <li>Added tutorial message explaining poppers to new players.</li>
+</ul>
+
+<h3>Visual Changes</h3>
+
+<ul>
+    <li>Mundus no longer has a health bar.</li>
+    <li>Updated model for MQ-3 Predator (model by ILH)</li>
+    <li>Updated model for the sheep pen fences (model by Grey Knight)</li>
+    <li>Camera view modes and first person modes are no longer enabled while watching a replay.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>Fixed tooltip for Arclite M23 Hecate to reflect that increased attack speed amount is 20%, not 30%.</li>
+    <li>Fixed tooltip for SAM-R to reflect that increased sight range is 300, not 250.</li>
+    <li>Added extra check to the AI smoke grenades trigger to prevent it from running on player controlled units.</li>
+    <li>Fixed bug that allowed saving 4 times per game instead of 3.</li>
+    <li>Fixed incorrect initialization for containment spawns trigger. This may result in an increase of up to 80% for some spawns.</li>
+    <li>Ailment reductions from abilities are no longer player-wide. Meaning marine reinforcements or rescued civilians no longer get these benefits.</li>
+    <li>Ailment reduction from antibiotics now only works when applied to heroes.</li>
+    <li>Fix Machine Gunner, Combat Engineer and Designated Marksman not allowed for privates in Bootcamp mode.</li>
+    <li>Spore parasite spawn timer now properly scales to the number of players.</li>
+    <li>Players that leave the game before selecting a class are no longer considered alive for balancing/spawns.</li>
+    <li>Hero selection units for empty slots are now removed after map start.</li>
+    <li>Player handicap no longer has any effect on the game.</li>
+    <li>Removed permanent camera shake in Deathmatch mode.</li>
+    <li>Fixed Assaultman upgrades not working after reviving in Deathmatch mode.</li>
+    <li>Fixed some difficulty modifiers (higher immortal respawn rate, ailment chance) not being applied with high SR.</li>
+    <li>Refactored movement speed adjustment system to prevent unintended speed changes.</li>
+    <li>Fixed Magnificent Bastards LZs being generated after the "no further landings" message.</li>
+    <li>Fixed sprinting while having a fracture not dealing damage.</li>
+    <li>Fixed delta helicopter cleanup impacting player controlled helicopters.</li>
+    <li>The 5 minutes Moirae timer no longer breaks after 1h.</li>
+    <li>Fix Ogilvy not changing position properly after he gets his gun.</li>
+    <li>[Rifleman]: Critical Strike is now leveled correctly.</li>
+    <li>[Flamethrower]: Fixed incorrect hotkey for learning Fortitudine.</li>
+    <li>[Combat Engineer]: Failing to place the Communications Array due to location no longer gives back more energy than the cost of the ability.</li>
+</ul>
+
+<h3>Internal Changes (not interesting for players)</h3>
+
+<ul>
+    <li>Added basic W3MMD integration.</li>
+    <li>Moved all trigger code to a Visual Studio Code workspace outside the map to facilitate development and improve version control.</li>
+    <li>Refactored all player data into a single struct.</li>
+    <li>Moved constant values to a separate file.</li>
+</ul>
