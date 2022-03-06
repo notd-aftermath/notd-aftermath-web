@@ -1,6 +1,13 @@
 {
     "releases": [
         {
+            "version": "1.7.6",
+            "date": "March 6th, 2022",
+            "gameVersion": "1.32.10.18067",
+            "logFile": "1.7.6.html",
+            "download": "https://github.com/notd-aftermath/notd-aftermath-warcraft3/releases/download/1.7.6/NOTD_Aftermath_1.7.6.w3x"
+        },
+        {
             "version": "1.7.5",
             "date": "January 12th, 2022",
             "gameVersion": "1.32.10.18067",
