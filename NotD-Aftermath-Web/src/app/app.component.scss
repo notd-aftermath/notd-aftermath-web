@@ -1,9 +1,29 @@
 .app-frame {
     min-height: 100%;
     overflow: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  // height: calc(100vh - 64px - 44px); // 100% - header - footer
 }
 
 .content {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 40px;
+}
+
+footer {
+  background: #673ab7;
+  color: #fff;
+  padding: 12px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+  }
 }
