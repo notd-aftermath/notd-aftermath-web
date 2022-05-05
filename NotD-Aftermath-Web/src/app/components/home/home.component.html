@@ -38,8 +38,8 @@
                 </p>
             </mat-card-content>
             <mat-card-actions>
-                <a  mat-raised-button color="primary" 
-                    *ngIf="(releaseService.latestRelease$ | async) != null" 
+                <a  mat-raised-button color="primary"
+                    *ngIf="(releaseService.latestRelease$ | async) != null"
                     [attr.href]="(releaseService.latestRelease$ | async).download"
                 >
                     <img class="download-icon" src="assets/map_icon.png">
@@ -49,4 +49,27 @@
         </mat-card>
     </div>
 
+</div>
+
+<div class="row">
+  <div class="card-container card-disclaimer col-sm-12 col-xl-12">
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-icon mat-card-avatar>priority_high</mat-icon>
+            <mat-card-title>Disclaimer</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                This is the community for Night of the Dead Aftermath, a custom game for <a target="_blank" href="https://playwarcraft3.com/">Warcraft® III: Reforged™</a>
+            </p>
+            <p>
+                As per Blizzard's <a target="_blank" href="https://www.blizzard.com/en-us/legal/2749df07-2b53-4990-b75e-a7cb3610318b/custom-game-acceptable-use-policy">Custom Game Acceptable Use Policy</a>,
+                custom games are sole and exclusive property of Blizzard.
+            </p>
+            <p>
+                Any version of this map hosted in Eurobattlenet, NetEase or any other third party services is neither affiliated nor endorsed by this community.
+            </p>
+        </mat-card-content>
+    </mat-card>
+  </div>
 </div>
