@@ -1,0 +1,65 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>Gameplay Changes</li>
+    <li>Visual Changes</li>
+    <li>Bug Fixes</li>
+	<li>Other</li>
+</ul>
+
+<p>The new save system update is finally here, FMar is a thing of the past!</p>
+
+<h2>Changes</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>Added new save system with maximum of 100M experience.</li>
+    <li>Saves are now tied to full Battle.net BattleTags including numbers (e.g. Player#1234)</li>
+    <li>Added First Sergeant and Master Gunnery Sergeant ranks right after Gunnery Sergeant. All ranks after this have been pushed by 1, with max rank now being General at 2M experience. The Field Marshal rank has been removed. This only impacts the officer abilities that get unlocked at 2Lt. Class requirements have not changed.</li>
+    <li>Added falling shell sound to Lieutenant Oliver Fire Missions.</li>
+    <li>Monofilament cartridge and MD5 mines no longer make targets hit briefly invulnerable.</li>
+    <li>[Assaultman] The Javelin CLU can now only be used by the Assaultman. Reduced considerably the weight of the item (total is now 12 missile + 4 CLU)</li>
+    <li>[Forward Observer] The earshock area of Orbital Artillery now goes up as the AoE of the ability increases instead of being the maximum range from the first level.</li>
+    <li>[Combat Engineer] Added fix to prevent the rapid fire ability from lasting forever sometimes.</li>
+    <li>Changed the -tl command to ping both Alpha and Bravo squads</li>
+    <li>Added short form of the -prime command (-p) for adjusting the satchel primer.</li>
+    <li>The Ctrl + click tag system can now be used after you die.</li>
+    <li>Players leaving before selecting a class no longer count as a casualty in terms of marine reinforcements.</li>
+    <li>Pet bite can no longer be casted on the pet.</li>
+    <li>Fixed game getting stuck if the USS Independence dies right after it spawns.</li>
+    <li>Experience is no longer subtracted when there is a negative XP gain factor. </li>
+    <li>The SMAW area for damaging items and trees now scales up with SMAW level, same as the unit damage area.</li>
+    <li>Artillery shells can no longer go into negative values.</li>
+    <li>Slight adjustments to position of some terrain doodads (mainly trees).</li>
+    <li>Changed -view and -fps interaction, the game now returns you to your previously selected -view after leaving fps mode</li>
+</ul>
+
+<h3>Visual Changes</h3>
+
+<ul>
+    <li>Removed highlighted hotkeys from all ability tooltips to simplify localization.</li>
+    <li>[Forward Observer] Updated Orbital Artillery effect to use projectiles instead of an explosion. Description of the ability has been updated to reflect this (kinetic projectiles fired from orbit instead of missiles).</li>
+    <li>[Forward Observer] Added passive ability icon for Perimeter Intelligence.</li>
+    <li>[Force Recon] Added passive ability icon for Raven Surveillance.</li>
+    <li>Changed the loading screen back to the classical one</li>
+    <li>Hero attributes are now hidden.</li>
+    <li>Fixed a few typos in the mission script.</li>
+    <li>Fixed unit descriptions for AH-1W Cobra and AH-64D Apache Longbow.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>[Forward Observer] Orbital artillery can no longer target bodies (should fix a visual bug that occurred sometimes)</li>
+    <li>Fixed Osiris marine reaction messages not working.</li>
+    <li>Reverted the change that disabled NVG in replays to prevent bugged replays (camera changes are still disabled in replays, those should be fine)</li>
+    <li>Added error correcting code to prevent bugged saves that changed CR or MOS.</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+    <li>Autoload now uses the sync natives. Removed the Sync, SyncInteger and PlayerUtils vJass libraries since they are no longer required.</li>
+    <li>Optimized a bit the ctrl + click tag system (removed one network-synced call).</li>
+</ul>
