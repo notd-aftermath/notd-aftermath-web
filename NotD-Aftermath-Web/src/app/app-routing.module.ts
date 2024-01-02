@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'changelog', component: ChangelogComponent },
   { path: 'suggestions', component: SuggestionsComponent },
-  { path: 'codes', component: CodesComponent },
+  // { path: 'codes', component: CodesComponent },
   { path: '**', redirectTo: '' }
 
 ];
