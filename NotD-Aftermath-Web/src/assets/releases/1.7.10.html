@@ -1,0 +1,100 @@
+<h2>General Theme of Change</h2>
+
+<ul>
+    <li>Gameplay Changes</li>
+    <li>Visual Changes</li>
+    <li>Sound Changes</li>
+    <li>Quality of Life Changes</li>
+    <li>Bug Fixes</li>
+	<li>Other</li>
+</ul>
+
+<p>The full Chinese translation is now available. This release also brings various small changes and a general polishing pass.</p>
+
+<h2>Changes</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>[Navy Corpsman] Adjusted NC's animation backswing to be in line with the other classes. Now the class will feel less sluggish when using abilities, including Desert Eagle, Reload, Drop Magazine etc.</li>
+    <li>[Forward Observer] The damage dealt to trees by Orbital Artillery now scales with its level.</li>
+    <li>[Combat Engineer] Reduced Detonation Cord's unusually long animation backswing.</li>
+    <li>[MQ-3 Predator] FLIR cooldown reduced to 15 minutes, down from 30.</li>
+    <li>[Infantry Unit Leader] Mana regeneration increased significantly.</li>
+    <li>Mk 17 Battle Rifle’s true sight range increased from 400 to 625.</li>
+    <li>The damage that satchels and air strikes deal to trees no longer depends on the damage of the Forward Observer's Fire Mission.</li>
+    <li>Flesh Composite can no longer spawn instead of Minos during Delta Airfield defense.</li>
+    <li>New ability: Grab Nearest Item. The caster will move to the nearest item in a small radius and, after a small delay, will attempt to pick it up. Useful for picking up items inside the tunnel, hangars etc. Available to all heroes and Dogmeat.</li>
+</ul>
+
+<h3>Visual Changes</h3>
+
+<ul>
+    <li>Added full Traditional Chinese translation provided by the community. The language is selected based on the game language.</li>
+    <li>Infection's debuff icon now disappears immediately when the unit explodes.</li>
+    <li>Added a list of tips for new players to the loading screen.</li>
+    <li>Trees will now shake when damaged by Orbital Artillery, Fire Mission, TOT Mission, Air Strike, Hellfire Missile and Satchel.</li>
+    <li>Changed Nano Body Armor's icon to make it visually distinguishable from Reactive Body Armor.</li>
+    <li>The M242 chain gun won't try to shoot if it's out of ammo.</li>
+</ul>
+
+<h3>Sound Changes</h3>
+
+<ul>
+    <li>Updated Fracture's sound effect.</li>
+    <li>Toggling Combat Knife on and off can no longer play the sound effect more than once per second to prevent spam.</li>
+</ul>
+
+<h3>Quality of Life Changes</h3>
+
+<ul>
+    <li>Satchel and FPS triggers now work during the game ending.</li>
+    <li>Disarm now properly stacks Chain Explosives and Claymores if the caster has a full inventory and a valid chain or clay case.</li>
+    <li>It's not so easy for pets to accidentally cancel Scratch Behind Ears now.</li>
+    <li>Transceiver usage no longer overwrites pings.</li>
+    <li>Attempting to Drop Magazine with insufficient magazines or while reloading will no longer force the marine to Hold Position.</li>
+    <li>The -stats command now works during Lost Cause and Magnificent Bastards. -showstats intentionally does not.</li>
+    <li>When the Forward Observer unlocks Perimeter Intelligence, affected units will get a buff that indicates it.</li>
+    <li>[Machine Gunner] Suppressive Fire can now only change the Machine Gunner's target at the time of being activated (it used to also do that half a second after).</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>The Chinese translation now displays correctly.</li>
+    <li>Saving after gaining more than 3000 experience in a single game will no longer generate a dead code.</li>
+    <li>Dark green players can autoload again.</li>
+    <li>MOS selection is now available immediately after winning any chapter 3.</li>
+    <li>Fixed an issue where privates were sometimes displayed with no rank.</li>
+    <li>Fixed a bug where typing anything that started with -p or -prime would display the satchel primer.</li>
+    <li>Fixed a bug where the Javelin could only be picked up by an Assaultman.</li>
+    <li>A player that leaves before picking a class can no longer cause another player to not gain any combat experience or show up on -tl.</li>
+    <li>Fixed some typos.</li>
+    <li>Added some missing tooltips.</li>
+    <li>[Flamethrower] The USS Independence ammunition resupply now correctly cuts off the FT at 2500 fuel instead of 2400.</li>
+    <li>If a hero was out of ammo just before getting resupplied by the USS Independence, they will no longer forget to reload their sidearm.</li>
+    <li>Fixed a bug where heroes who were out of ammo and had combat knife or safety on wouldn't automatically reload upon receiving ammo and, even after manually reloading, their primary weapons wouldn't fire until toggling knife or safety on and off again.</li>
+    <li>Fixed a rare bug that could cause a hero to be unable to auto reload or to be able to shoot while at 0 rounds without having to reload.</li>
+    <li>Hellfire missiles now deal the correct amount of damage to trees.</li>
+    <li>[Forward Observer] Fixed multiple issues with Orbital Artillery's Shock effect. Not to be confused with earshock, Shock is a random component of OA that has a 20% chance to proc  at level 1 and the chance increases by 20% per OA level. The effect deals extra damage, slows targets temporarily and makes them fall to the ground (this is a visual effect only, the targets don't get disabled by this.). Due to a bug, Shock was only affecting corpses. Now it will affect only targets it's supposed to. Also, level 5 OA now has the correct chance to apply Shock (used to be 0% due to an arithmetical error).</li>
+    <li>[Machine Gunner] Ammunition Feed no longer pauses the duration of buffs and debuffs. As a result, their effect icons will no longer flash while using the ability. Additionally, it no longer hides the hero's ability interface. Commands can be cached during the casting time and will be executed after that.</li>
+    <li>[Machine Gunner] Using Ammunition Feed two or more times in a row in quick succession will no longer remove the ability's sight range penalty and reload animation earlier than intended.</li>
+    <li>[Machine Gunner] The sight range penalty of Ammunition Feed will get removed as soon as the Machine Gunner is done casting it. So 0.65 seconds earlier than it used to.</li>
+    <li>Fixed a bug where civilians wouldn't drop Fibrin Bandages after using one. It may take them a few seconds to drop it, but they will. Delay may be longer during RA.</li>
+    <li>Civilians should now always group up near Residence 41 during RA and Hell Clouds (early dark clouds).</li>
+    <li>Fixed a bug where F-22 Raptors sometimes wouldn't shoot any missiles during Air strike (CAS). Reduced missile damage by 20% so the average damage would feel unchanged.</li>
+    <li>Interface buttons will not only be visible during replays again, but they will be visible even during the intro cinematic so you can skip it.</li>
+    <li>Fixed a bug where issuing another command too quickly could cause primary weapon attacks to shoot a blank. The fix was applied to Combat Engineer, Designated Marksman and Delta Operator, as well as mini engineer, marksman and sniper.</li>
+    <li>Fixed M320 grenades dealing no damage sometimes.</li>
+    <li>Fixed an issue where Zulus before the convoy would sometimes stand right in the middle of Residence41.</li>
+    <li>Fixed an issue with the M242 Bushmaster chain gun sometimes refusing to get disassembled.</li>
+    <li>If the M242 gets destroyed while it's being manned, its operator will no longer be stuck unable to shoot.</li>
+    <li>Fixed a scenario where a hero could operate the M242 and shoot his own weapon at the same time.</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+    <li>Added localization support using FDF and string files.</li>
+    <li>Altered the algorithm that prevents players from getting a corrupted save code.</li>
+</ul>
