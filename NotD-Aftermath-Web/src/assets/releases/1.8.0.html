@@ -1,0 +1,132 @@
+<h2>Patch summary</h2>
+
+<ul>
+    <li>Major improvements to Chapter 3: Containment</li>
+    <li>Hell mode gets new difficulty modifiers tied to high squad rating</li>
+    <li>Improvements to Chapter 2: Nightstalkers</li>
+    <li>Expansion of the night vision mechanics</li>
+    <li>Polishing</li>
+	<li>Fixed issues caused by recent Blizzard patches</li>
+</ul>
+
+<h2>Patch details</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>New content, changes and improvements to Chapter 3: Containment.</li>
+    <li>Added a different audio cue for Laufey.</li>
+    <li>There's now a chance the Loki/Laufey audio cue won't play on hell mode above 400k squad rating.</li>
+    <li>There's now a chance that Loki will spawn up to 1 minute earlier during the Sentry mission on hell mode above 300k squad rating.</li>
+    <li>There's now a chance that cocoons will spawn a low HP Minos when destroyed if the squad rating is above 600k.</li>
+    <li>Laufey can now spawn instead of Loki if not enough civilians are alive at the end of wave 8 (Moirae/Hades/Diablo). The chance is higher than during the boat escort.</li>
+    <li>The EM Sphere now reduces energy instead of HP.</li>
+    <li>Slightly increased distance-based timer to kill Lyganesh in chapter 2. Note that it uses the distance to the closest player at the time of spawning.</li>
+    <li>Added more spawns when the boat gets destroyed and when Lyganesh times out during Chapter 2 Delta. The reason is that failing those missions used to not feel punishing and even felt rewarding in a way, due to the low number of spawns after failing the mission.</li>
+    <li>Pets and mechanical units can no longer operate the M242 chain gun.</li>
+    <li>The infected civilian AKA green civ will be green as soon as he spawns. If his home is searched too late, he will already be dead and a super parasite will spawn nearby.</li>
+    <li>Doubled the Hunters' base damage so they won't seem underpowered anymore.</li>
+    <li>Increased the rank xp reward for killing a Minos during Nightstalkers from 20 to 30. That's meant to balance the low rank exp gain during Nightstalkers compared to other chapters.</li>
+    <li>Killing any boss that spawned during Nightstalkers will grant extra hero exp to nearby heroes. This is meant to balance the low hero exp gain during Nightstalkers and the Dark Clouds leading up to it.</li>
+    <li>Delivering energy cells to the power generator during Nightstalkers grants the player extra hero exp for each cell, provided the hero is close to the power generator. This is meant to reward the player for helping with the mission and compensate them for the experience they may have missed while doing it.</li>
+    <li>There is now a very small chance to get Nightstalkers with less than 6 surviving players (1% to 5%, depending on the number of surviving players and provided that Chapter 1 ends with Dark Clouds). This is meant to give solo players and small teams a chance to experience the chapter. Slightly reduced the chance to get NS with 6+ surviving players to compensate.</li>
+    <li>Pets now have their jump ability unlocked from the start. Jumping is such an integral part of NOTDAM that not having that ability would often mean you'd be unable to get to those 10 corpses that were needed to unlock it.</li>
+    <li>[MQ-3 Predator] Increased the maximum level of Hellfire Missiles to 5 to account for cases when a pred-MOS player finds 3 Hellfire Upgrade Modules.</li>
+    <li>[MQ-3 Predator] The damage dealt to trees by Hellfire Missiles now scales with level.</li>
+    <li>Technicians won't occasionally try to attack Golf Company or zulus.</li>
+    <li>The civilians now group up a little earlier during RA (town defense random artillery sequence).</li>
+    <li>If a unit picks up a Javelin Missile and already has the Javelin CLU in its inventory, or the other way around, the two items will combine into a single item: Javelin Missile System. Can't be combined by civilians, dogmeat or mechanical units. Can only be used by Assaultman. It works as follows: The first use selects the target. The second use will attempt to fire the missile. If the missile is fired, the item will disassemble into the Javelin CLU and an empty Javelin Missile. The reason for this change is that even before the creation of the Javelin, the Assaultman had severe inventory issues. This change will remove the unreasonable two slot requirement while retaining the need to find both the CLU and the missile before being able to use the item.</li>
+    <li>New chat command: -abort. Used to cancel the Javelin Missile System's target.</li>
+    <li>The FGM-148 Javelin Missile is no longer considered a heavy weapon. The Javelin Missile System is.</li>
+    <li>Bradley tanks will be more cooperative when someone tries to repair them during Magnificent Bastards.</li>
+    <li>There's now an equal chance to get Magnificent Bastards, Lost Cause or Containment. Except when the team is below Lost Cause's squad rating requirements, then they can't get that chapter.</li>
+    <li>Decreased the likelihood of early dark clouds.</li>
+    <li>Prevented a scenario during Lost Cause where some Zulus that spawned before LC would go to patrol town together with Golf company. From now on these Zulus will go after players instead. This is as much a bug fix as a gameplay change as it never made sense for zombies to patrol Ravenholm side by side with Golf company.</li>
+    <li>If there's any Atrien riflemen on the map during Containment or Magnificent Bastards, they will help with the mission.</li>
+    <li>Civilians can carry SMAW and Shiva again but can't use them.</li>
+    <li>Desert Eagle now gets unlocked at 1500 xp, down from 5000. This is meant to make life a little bit easier for new players.</li>
+    <li>The chance for parasite spores to spawn super parasites is now determined by the number of surviving players, not starting players.</li>
+    <li>The transceiver's slow effect is now weaker but it will stack with itself if you use the item in quick succession. Additionally, the slow and visual effects can no longer cancel themselves prematurely.</li>
+    <li>The coordinates posted by abilities like Laser Designator and Airstrike now use the same grid that's used in the world editor, instead of a grid that gets randomly generated each game. Basically from now on, those coordinates will be able to give you some real information about where the location is. For reference, coordinates (0,0) are in Ravenholm.</li>
+</ul>
+
+<h3>Visual Changes</h3>
+
+<ul>
+    <li>New ability: NVG Filter. Switches the player's Night Vision Goggles between green, false color and red mode. Each mode has its own advantage (note that they don't alter any unit stats).</li>
+    <li>Before a Minos disappears at the end of Nightstalkers, it will play a burrow animation.</li>
+    <li>"Extinguished flares" won't appear during Lost Cause anymore.</li>
+    <li>Collapsed rocks from closed caves are no longer selectable and won't appear as a unit on the minimap.</li>
+    <li>Changed the color of Zulus on the minimap to be visually distinguishable from the gray player.</li>
+    <li>Changed the color of Golf company units that patrol town to be visually distinguishable from Zulus.</li>
+    <li>Some players now get listed as MIA (missing in action) in -report and -team after certain game endings.</li>
+    <li>Players who quit the game without having picked a hero or disconnected during the loading screen get listed as AWOL (absent without leave) in -team.</li>
+    <li>The -team command now also shows the names of dead players.</li>
+    <li>New camera option: -view 5.</li>
+    <li>To prevent desyncs, night vision won't automatically turn off if your hero or pet dies, and the camera view won't reset.</li>
+</ul>
+
+<h3>Sound Changes</h3>
+
+<ul>
+    <li>The Javelin will now correctly play its fly-by sound. Additionally, the explosion has a new, more satisfying sound effect.</li>
+    <li>Reduced the volume of Marksman primary weapon attacks.</li>
+</ul>
+
+<h3>Quality of Life Changes</h3>
+
+<ul>
+    <li>Relaxed the anti-spam check of the tagging system (control pings). Can now be used once per 3 seconds (down from 5).</li>
+    <li>Item tag pings last longer so people have more time to see them.</li>
+    <li>The "medic" chat prompt now only activates on exact match.</li>
+    <li>Added confirmation dialog to -kick command.</li>
+    <li>When stacking HEDP rounds into a weapon, the M320 grenade launcher now has a lower priority than the M-29 and Mk 17. The idea is to prioritize heavy weapons.</li>
+    <li>Picking up HEDP rounds can stack them simultaneously with M-29/Mk 17 and M320 if the unit has both weapons, one gets full and there's some HEDP rounds left for the other one.</li>
+    <li>The transceiver target will be reset when it dies, no matter if it was killed by the transceiver or not.</li>
+    <li>The camera returns to the player's preferred view after exiting the tunnel or releasing Delete or Insert.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>Fixed bugs caused by recent Blizzard patches, like the side panels having the wrong texture.</li>
+    <li>Game progress won't be stuck if the USS Independence dies right after it spawns.</li>
+    <li>The host can't kick a player while the game is paused. This is meant to prevent mass desync.</li>
+    <li>The medevac at the end of Magnificent Bastards now has a proper exit animation and will evac corpses more reliably.</li>
+    <li>The Communications Array can now figure out when to give the players vision of the brown AI player's units.</li>
+    <li>Roshan's Scratch Behind Ears ability can no longer enter a loop.</li>
+    <li>Fixed a bug where Eris/Medusa's red screen effect would only trigger if she was damaged by a primary attack.</li>
+    <li>Using Infrared Chemlight during the last LZ of Magnificent Bastards won't occasionally fail to redirect the helicopter to Ravenholm.</li>
+    <li>Bradleys will no longer occasionally get stuck in place during Magnificent Bastards.</li>
+    <li>Air strike strobes will no longer occasionally survive the air strike and give the player vision of the surrounding area. Also, they are now nonselectable and don't appear on the minimap.</li>
+    <li>[Forward Observer] Orbital Artillery's tree damage AoE now matches the shown circle.</li>
+    <li>The pistol reload chat line appears at the correct time again.</li>
+    <li>Fixed an issue on Boot Camp where loading your code too early could end up locking the classes after Designated Marksman.</li>
+    <li>Fixed a bug with the experience reward at the end of Deathmatch.</li>
+    <li>After a game ends, the scorescreen will no longer be all black (forcing people to have to alt+f4) if the red or orange player typed "-tc -1" at any point during the game.</li>
+    <li>Fixed some bugs that could cause abnormally high or low numbers of Zulu spawns.</li>
+    <li>Fixed some desyncs related to the player's pet dying.</li>
+    <li>Bosses should no longer occasionally refuse to attack anyone.</li>
+    <li>The Engineer and Marksman's primary weapon will no longer occasionally fail to produce a sound effect.</li>
+    <li>Fixed 2 different bugs that could cause static Golf company forces to become hostile towards dynamic Golf company forces.</li>
+    <li>[Designated Marksman] Fixed a bug where the condition for the DM to not pull aggro was to have his knife toggled off, instead of having learned Muzzle Break Suppressor.</li>
+    <li>Fixed a scenario where a mini marine could operate the M242 and shoot his own weapon at the same time.</li>
+    <li>Fixed a bug during the boat mission where 1 rescued civilian could count as 2.</li>
+    <li>Civilians that are already waiting on location when the boat arrives will now evacuate any corpses and drop any items they might be carrying before they board the USS Independence.</li>
+    <li>Fixed a bug where the method for selecting a random alive player would sometimes pick a dead one. This will fix multiple issues, including Oliver shelling town, Osiris blinking to town, gank spawns appearing in town instead of near players, field chat not triggering and zulus heading in a random direction.</li>
+    <li>[MQ-3 Predator] Zulus can no longer trigger a fracture sound effect when attacking the Predator.</li>
+    <li>[MQ-3 Predator] -ac now takes into account short circuits suffered by the Predator.</li>
+    <li>Using Drop Magazine while being extremely close to a friendly unit can no longer cause said friendly unit to murder you.</li>
+    <li>Fixed a rare bug where you could get a bad code with the wrong MOS, combat readiness or medals.</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+    <li>Fixed game stuttering at certain moments, most notably during Dark Clouds and Nightstalkers.</li>
+    <li>Fixed some typos.</li>
+    <li>Fortitudine is no longer occasionally referred to as Fortitude.</li>
+    <li>Added some missing tooltips.</li>
+    <li>Added some missing multiboard objectives.</li>
+    <li>Added some missing mission descriptions.</li>
+</ul>
