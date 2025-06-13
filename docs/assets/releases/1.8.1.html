@@ -1,0 +1,148 @@
+<h2>Patch summary</h2>
+
+<ul>
+    <li>Created a solution for unit lag</li>
+    <li>Hell mode balance changes for games with 3 or less players</li>
+    <li>Improvements to friendly and enemy AI</li>
+    <li>Added more voice lines</li>
+    <li>Polishing</li>
+    <li>Performance optimizations</li>
+</ul>
+
+<h2>Patch details</h2>
+
+<h3>Gameplay Changes</h3>
+
+<ul>
+    <li>Convoy units will stay in a more compact group.</li>
+    <li>If your hero needs medical attention, spamming Esc will make nearby medics owned by the brown player try and help you. Doesn't work for units other than your own hero.</li>
+    <li>Health checks related to vital signs, AI heals and reload time increase are now based on the percentage of the unit's HP instead of a flat number. A unit will usually be considered low on HP if its health is below 50%.</li>
+    <li>Friendly AI will avoid having multiple units medkit the same unit.</li>
+    <li>NPC tanks and choppers will be more cooperative when a player tries to repair them.</li>
+    <li>Reworked and reenabled Rifle Grenade usage by AI marines. As before, the ability is available to Lt. Rasczak and NPC delta operators. This time around, they will avoid using the ability near any items.</li>
+    <li>NPCs will no longer use M-29, Mk 17 and M320 grenade launcher item grenades if players give those items to them. To clarify: some NPCs will use their own grenade ability, but none of them will use item grenades.</li>
+    <li>Improved the AI of the brown backup riflemen that spawn in town in 1 and 2 man games.</li>
+    <li>The brown machine gunners at the Containment LZ no longer have a higher chance of using Suppressive Fire if the difficulty is Nightmare or lower.</li>
+    <li>Combat Assistance (the Z - Z ability) now prioritizes Fibrins over Medkits when you don't have a shotgun and are below 50% HP.</li>
+    <li>Hunters will get Hungered if they leap on a unit that has Open Wounds.</li>
+    <li>Wraith B can now bash flying units.</li>
+    <li>Player controlled helicopters no longer get a free +10 damage buff.</li>
+    <li>The free Benelli in Ravenholm spawns based on starting player count, not alive player count.</li>
+    <li>Being on different fire teams no longer prevents players from sharing control. The condition remains that the other player needs to have shared vision in the first place, which means the player is dead or the Communications Array is up.</li>
+    <li>The ghoul spawn trigger won't get disabled during Lost Cause.</li>
+    <li>Respawning Amphisbaena will immediately aggro onto a nearby unit.</li>
+    <li>Reduced the number of extra enemy spawns on Hell mode when there are 3 players or less. The amount of extra Hell spawns used to be the same, regardless of the number of players. Because of that, a solo Hell player used to have to deal with half the number of spawns a 10 man team would. 1.8.0 fixed a bug that was causing the extra hell spawns to stop if the number of surviving player dropped below 5 due to deaths. While that brought more consistency, it also made the lack of scaling more noticeable. Now the number of extra hell spawns will scale up with the number of players.</li>
+    <li>Enabled rewards of 100 mission exp for any chapter completed solo. This was already in the game, but wasn't being awarded for a strange reason that could possibly have just been a bug. Even with the new balancing for solo hell mode, solo games remain the most difficult. But solo exp has always been very low because you don't get much combat exp. This change is meant to reward solo players more adequately.</li>
+    <li>Replays can be viewed from the enemy's PoV.</li>
+    <li>Increased the combat XP penalty for killing player heroes to match the penalty for killing other friendly units. That's -10% for the player's first team kill (Article 15), -20% per repeated.</li>
+    <li>[Navy Corpsman] Range increased from 1300 to 1400. Now it matches the mini NC's.</li>
+    <li>[Flamethrower] Reduced the bonus fuel for randoming FT from 450 to 150.</li>
+    <li>[Machine Gunner] Reduced the bonus magazines for randoming MG from 3 to 2.</li>
+    <li>[MQ-3 Predator] Reduced the move speed penalty for installing a Hellfire Upgrade Module from 10 to 3. For a class whose only purpose is scouting, losing 10 move speed was arguably turning the HFUM into a downgrade instead of an upgrade.</li>
+    <li>[MQ-3 Predator] The first Hellfire Upgrade Module drops during Wave 1 instead of Wave 6. The second will drop during Wave 10 as before. A third will now drop during Wave 15. This means one will drop at the beginning of each chapter.</li>
+    <li>The MQ-3 Predator, Dogmeat and civilians no longer gain any benefit from AP, U-238E and TX-1 Ammunition, although they can still carry them as a disabled item.</li>
+    <li>Pilots can use AP, U-238E and TX-1 Ammunition.</li>
+    <li>TX-1 Ammunition can only prevent Immortals from respawning if carried by a hero or mini marine. The chance is still 50%.</li>
+    <li>Replaced the two brown hero marines near the spawn helicopter at the beginning of the game with mini marines.</li>
+    <li>When Anti-Venom is unsuccessfully used on a unit that has Veratrum or Necrotroph, the unit will have a higher chance of success next time. It should take 3 attempts at most.</li>
+    <li>SMAW can push units up one cliff level. This can be used in some interesting and sometimes risky ways, for example to free units stuck in deep water.</li>
+    <li>It's no longer possible to prevent random bosses from spawning during Chapter 3: Magnificent Bastards when a certain condition was met.</li>
+    <li>Jumping into water can't cause fall damage unless you have a fracture.</li>
+</ul>
+
+<h3>Visual & Sound Changes</h3>
+
+<ul>
+    <li>All players are displayed on the same team in the lobby. Zulus and Golf Company are also displayed. This makes it possible to improve enemy AI, watch replays from the enemy's point of view, prevent unit lag, share control to players from the other fire team and prevent new players from thinking the map is PVP. Deathmatch is unaffected by this change.</li>
+    <li>Enemy health bars will match the enemy color on the minimap (requires team colored life bars to be enabled in game options).</li>
+    <li>The health bars of evil civilians are no longer visible.</li>
+    <li>Removed unnecessary camera shake from intro.</li>
+    <li>[Forward Observer] Using the -dp command changes the radius of the spell circle when you cast Fire Mission.</li>
+    <li>Updated Fire Mission's visual and sound effects.</li>
+    <li>Added some missing visual and sound effects to abilities used by mini marines.</li>
+    <li>[Designated Marksman] Each level of Muzzle Brake Suppressor further reduces the sound volume of the DM's attacks. The aggro remains unchanged: DM still pulls less aggro if he has learned MBS, regardless if it's level 1 or 5.</li>
+    <li>[Force Recon] FR's UAV now uses the same model and sound set as the MQ-3 Predator.</li>
+    <li>Added missing voice lines for male heroes. They play when you click the hero repeatedly or attack target a unit.</li>
+    <li>Added a separate set of female voice lines for Navy Corpsman.</li>
+    <li>Added a separate set of male voice lines for mini marines.</li>
+    <li>A new voice line will play over the radio when someone places a Satchel Charge.</li>
+    <li>A new voice line will play over the radio when someone finds civilians during wave 7. Only plays once per player.</li>
+    <li>Changed Navy Corpsman's 3D portrait model.</li>
+    <li>Jumping into water creates a visual effect.</li>
+</ul>
+
+<h3>Quality of Life Changes</h3>
+
+<ul>
+    <li>Mini marines now have the Grab Nearest Item ability.</li>
+    <li>Mini Machine Gunners are automatically ordered to hold position after using Suppressive Fire, just like hero MGs.</li>
+    <li>Dogmeat and Force Recon's UAV can't pick up a Rusty Mining Pick.</li>
+    <li>Players' non-hero units become invulnerable during chapter transitions and cinematics, just like the hero units.</li>
+    <li>The circular markers that appear on the ground when Fire Mission and White Phosphorus Rounds are used disappear as soon as the first shell hits.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+    <li>There can now be a lot more enemy units on the map before unit lag becomes an issue. Unit lag is the phenomenon where units can't move properly when too many get ordered to move at the same time.</li>
+    <li>Mini Navy Corpsman's Anti-venom no longer removes Open Wounds.</li>
+    <li>Fixed Smoke Grenade's projectile not being visible.</li>
+    <li>Fixed a bug where killing someone with an MD5 mine could cause no Article 15 or attribute it to an innocent player.</li>
+    <li>[Force Recon] Max level RAVEN mines now have a bigger blast radius, as intended.</li>
+    <li>[Force Recon] Fixed a bug where the FR could very easily lose the permanent move speed increase from leveling Reconnaissance. If you didn't know that Reconnaissance increases move speed, you're not alone. I've updated its tooltip to let people know it does that.</li>
+    <li>[Force Recon] FR's camouflage fade times now match those stated in the tooltip.</li>
+    <li>Ground Illumination Flares can produce light during Lost Cause again.</li>
+    <li>Combat Maneuvers now correctly grants its +3 armor bonus during Lost Cause.</li>
+    <li>[MQ-3 Predator] FLIR no longer shows spores during Lost Cause.</li>
+    <li>Golf Company marines that patrol Ravenholm can use most of their abilities now, just like blue Golf always could.</li>
+    <li>Some passive bonuses will no longer carry over between deaths on Deathmatch.</li>
+    <li>Fixed some other bugs on Deathmatch that I'm sure nobody ever noticed.</li>
+    <li>The brown AI player's Apaches leave at the start of the final wave of Magnificent Bastards, as intended. Until now, only the Cobras did. Also, the choppers will now fly to the edge of the map before disappearing.</li>
+    <li>The Assaultman's minis no longer benefit from SMAW Proficiency.</li>
+    <li>[Assaultman] SMAW proficiency cast time improvement now matches the tooltip (increased from 0.10 to 0.15 per level).</li>
+    <li>[Assaultman] Nanosteel Net's cooldown reduced from 16 to 12 seconds to match the tooltip.</li>
+    <li>Fixed a bug where the Immortals' damage absorb buff icon remained displayed for 3 seconds after the immortal lost the ability.</li>
+    <li>Necrotroph can affect non-heroes now.</li>
+    <li>[Forward Observer] Orbital Artillery's item damage AoE matches the shown circle.</li>
+    <li>[Forward Observer] Orbital Artillery's tree damage is now done in waves, not all at once at the beginning.</li>
+    <li>[Forward Observer] Orbital Artillery terrain deformations stop when the ability is cancelled.</li>
+    <li>[Forward Observer] gets +5 max mana when leveling Fire Mission, as intended.</li>
+    <li>[Forward Observer] White Phosphorus Rounds no longer provide vision if there's a Communications Array.</li>
+    <li>Using less than 20 shells will no longer delay the Fire Mission.</li>
+    <li>Some grenades no longer deal less damage to trees than intended.</li>
+    <li>Trees will now shake while a helicopter is landing nearby, as intended.</li>
+    <li>Having more than 5 starting players no longer reduces zulu HP.</li>
+    <li>Double clicking or double pressing Marking Beacons, SMAW, M320 Grenade Launcher, M-29 Assault Rifle, Mk 17 Battle Rifle or Shiva won't use the item at an unintended location. As a side effect, you won't be able to use those items if you directly target an item on the ground.</li>
+    <li>Explosives no longer mysteriously remain intact after being hit by a Shiva.</li>
+    <li>Fixed a bug where Immortals would sometimes be unable to respawn in Chapter 1.</li>
+    <li>Fixed a bug where Hunters would only use their Leap ability if they were being shot at.</li>
+    <li>The pistol ability will now disappear as soon as the pistol magazine becomes empty. This fixes a bug where pistols could reload faster and consume more mana than intended.</li>
+    <li>Recovering from ear shock no longer sets the volume of unit sounds higher than intended.</li>
+    <li>Jump animations will get cancelled if the jumper dies.</li>
+    <li>Using -random won't sometimes fail to update the remaining hero counter on the spawn helicopter.</li>
+    <li>[Rifleman] The extra magazines for Rifleman with 50k+ experience now reduce his move speed as intended. This bug was essentially resulting in a free 7 move speed increase.</li>
+    <li>Increased the explosion radius of Infection from 200 to 275 above Normal difficulty, as intended.</li>
+    <li>Jumping no longer has unintended side effects like temporarily losing certain True Sight abilities or disabling Rifleman's Focused Fire.</li>
+    <li>Fixed a bug during BHD where the rescuing player couldn't tell the crew was all dead upon arriving at the crash site.</li>
+    <li>If BHD minis have an item in their 4th slot, they will no longer forget to drop it upon extraction.</li>
+    <li>The BHD helicopter will no longer stay in the air if it passed through the northwest tunnel before it crashed. </li>
+    <li>Civilians carrying a corpse will no longer occasionally drop it before boarding the USS Independence.</li>
+    <li>Fixed a bug where Saline IV wouldn't remove Oxalic Acid if used by an AI marine.</li>
+    <li>The AI delta operator who places explosives for Lyganesh now gets an armor item, as intended.</li>
+    <li>Containment no longer spawns twice as many items as Lost Cause and Magnificent Bastards.</li>
+    <li>Fixed a bug where players could occasionally lose combat readiness even after winning a game.</li>
+    <li>Fixed a bug where ailments would sometimes fail to affect invisible units.</li>
+</ul>
+
+<h3>Other</h3>
+
+<ul>
+    <li>[Navy Corpsman] Corrected the tooltip of Resistance. Old incorrect tooltip stated 5% chance to stun targets for 0.5 seconds and deal an additional 25 damage. New correct tooltip states 25% chance to stun targets for 0.5 seconds and deal an additional 5 damage. Note that the stun duration is halved against bosses.</li>
+    <li>[Combat Engineer] Corrected the tooltip of MK-2 Nano Processor. Old incorrect tooltip stated that friendly hero gains 1/1.5/2/2.5/3 energy for every 1 energy transferred. New correct tooltip states it costs 1/0.9/0.8/0.7/0.6 energy for every 1 energy transferred (depending on ability level).</li>
+    <li>[Force Recon] Updated to tooltip of Reconnaissance to let you know that each level increases move speed (by 5), sight range (by 25) and damage (by 1).</li>
+    <li>[Machine Gunner] Concentration's tooltip lets you know it increases the MG's own mana regen by 2% per ability level.</li>
+    <li>Updated the tooltip of Saline IV to let people know that it cures major poisonings at level 7.</li>
+    <li>Corrected the tooltips of item grenades to state the correct damage amount.</li>
+    <li>Corrected some other tooltips.</li>
+    <li>Fixed various memory leaks.</li>
+</ul>
