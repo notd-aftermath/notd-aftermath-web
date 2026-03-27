@@ -1,6 +1,13 @@
 {
     "releases": [
         {
+            "version": "1.8.4",
+            "date": "March 27th, 2026",
+            "gameVersion": "2.0.4.23556",
+            "logFile": "1.8.4.html",
+            "download": "https://notd.am/assets/mapReleases/NOTD_Aftermath_1.8.4.w3x"
+        },
+        {
             "version": "1.8.3",
             "date": "November 28th, 2025",
             "gameVersion": "2.0.3.23175",
